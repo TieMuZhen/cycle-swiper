@@ -2,6 +2,9 @@
 - swiper_normal：普通版
 - swiper_component：组件版
 
+## 效果图
+![image](https://user-images.githubusercontent.com/18660671/162598923-509789de-e62a-4f09-a1f9-c965e752fad6.png)
+
 ## 功能
 
 * 可控制是否自动播放
