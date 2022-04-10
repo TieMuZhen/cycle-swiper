@@ -28,16 +28,39 @@
 
 ## 可配置参数
 - `imgArr`：图片数组，必选，`[{url: '', imgPath: ''}]`
+  - `url`: 点击图片跳转的链接 
+  - `imgPath`：图片路径
 - `intervalTime`：自动播放图片滑动间隔，可选，默认`1500`
 - `autoPlay`：是否自动播放，可选，默认`true`
 - `height`：幻灯片高度，可选，默认`300`
 - `width`：幻灯片宽度，可选，默认`300`
 
 ## 用法
+#### html代码
 ```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="./index.css"> <!-- 引入所需要css样式 -->
+</head>
+<body>
+    <div id="swiper-list"></div> <!-- 引入轮播图dom -->
+</body>
+<script src="./slider.js"></script> <!-- 引入所需要js -->
+<script src="./index.js"></script>
+</html>
+```
+#### js代码
+```
+// index.js
+
 let imgArr = [
     {
-        url: '#1.png', // 点击图片跳转的链接
+        url: '#1.png',
         imgPath: './imgs/1.png'
     },
     {
