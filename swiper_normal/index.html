@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="container">
+        <ul class="images">
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+        </ul>
+        <!--伴随移动的小圆点-->
+        <div id="dots">
+            <span index="1" class="on dot"></span>
+            <span index="2" class="dot"></span>
+            <span index="3" class="dot"></span>
+            <span index="4" class="dot"></span>
+        </div>
+        <a href="javascript:;" id="prev" class="arrow"><</a><!--向左-->
+        <a href="javascript:;" id="next" class="arrow">></a><!--向右-->
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

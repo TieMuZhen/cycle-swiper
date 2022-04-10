@@ -1,0 +1,89 @@
+#container,
+.images,
+.images li{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.images{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 600%;
+    font-size: 0; /* 消除li的display: inline-block; 间隔问题 */
+}
+.images li{
+    display: inline-block;
+    text-align: center;
+    line-height: 300px;
+    font-size: 50px;
+    height: 300px;
+    width: 300px;
+}
+li:nth-child(1){
+    background-image: url("./imgs/1.png");
+}
+li:nth-child(2){
+    background-image: url("./imgs/2.png");
+}
+li:nth-child(3){
+    background-image: url("./imgs/3.png");
+}
+li:nth-child(4){
+    background-image: url("./imgs/4.png");
+}
+
+#dots{
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#dots span{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    height: 10px;
+    width: 10px;
+}
+
+#dots .on{
+    background-color: cornflowerblue;
+}
+
+.arrow{
+    border: 1px solid white;
+    color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 36px; /* 撑起a标签大小 */
+    position: absolute;
+    top: 135px;
+    display: none;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+#container:hover .arrow{
+    display: block;
+}

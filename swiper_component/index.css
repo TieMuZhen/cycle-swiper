@@ -1,0 +1,69 @@
+#swiper-list,
+.swiper-main,
+.swiper-spots,
+.swiper-main li,
+.swiper-spots li{
+    margin: 0;
+    padding: 0;
+}
+#swiper-list{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.swiper-main{
+    position: absolute;
+    left: 0;
+}
+.swiper-main li{
+    display: inline-block;
+    background-position: center;
+}
+
+.swiper-spots{
+    position: absolute;
+    bottom: 3%;
+    height: 6%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.swiper-spots li{
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.swiper-spots .on{
+    background-color: cornflowerblue;
+}
+
+.left-btn{
+    position: absolute;
+    top: 38%;
+    left: 3%;
+    height: 13%;
+    width: 13%;
+    display: none;
+}
+.right-btn{
+    position: absolute;
+    top: 38%;
+    right: 3%;
+    height: 13%;
+    width: 13%;
+    display: none;
+}
+
+#swiper-list:hover .left-btn{
+    display: block;
+}
+
+#swiper-list:hover .right-btn{
+    display: block;
+}
