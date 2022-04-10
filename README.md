@@ -26,14 +26,14 @@
 - 定时器使用
 - `position`使用
 
+## 可配置参数
+- `imgArr`：图片数组，必选，`[{url: '', imgPath: ''}]`
+- `intervalTime`：自动播放图片滑动间隔，可选，1500
+- `autoPlay`：是否自动播放，可选，false
+- `height`：幻灯片高度，可选，300
+- `width`：幻灯片宽度，可选，300
+
 ## 用法
-#### 可配置参数
-- `imgArr`：图片数组
-- `animationTime`：动画执行的时间
-- `intervalTime`：图片停留的时间
-- `autoPlay`：是否自动播放
-- `height`：幻灯片高度
-- `width`：幻灯片宽度
 ```
 let imgArr = [
     {
